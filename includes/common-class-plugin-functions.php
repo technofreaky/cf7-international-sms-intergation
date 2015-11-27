@@ -1,15 +1,12 @@
 <?php
 /**
  * functionality of the plugin.
- * @link       @TODO
- * @since      1.0
- * @package    @TODO
- * @subpackage @TODO
  * @author     Varun Sridharan <varunsridharan23@gmail.com>
  */
 if ( ! defined( 'WPINC' ) ) { die; }
 
 class Contact_Form_7_International_Sms_Integration_Functions {
+	
 	public function __construct() {
 		add_action( 'wpcf7_before_send_mail', array($this, 'send_sms' ) );
   	}

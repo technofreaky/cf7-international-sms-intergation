@@ -1,16 +1,6 @@
 <?php
 /**
  * The admin-specific functionality of the plugin.
- *
- * @link       https://wordpress.org/plugins/woocommerce-role-based-price/
- *
- * The admin-specific functionality of the plugin.
- *
- * Defines the plugin name, version, and two examples hooks for how to
- * enqueue the admin-specific stylesheet and JavaScript.
- *
- * @package    @TODO
- * @subpackage @TODO
  * @author     Varun Sridharan <varunsridharan23@gmail.com>
  */
 if ( ! defined( 'WPINC' ) ) { die; }
@@ -31,7 +21,7 @@ class Contact_Form_7_International_Sms_Integration_Admin extends Contact_Form_7_
 	}
 	
 	public function add_menu(){
-		$this->page_slug = 'my-custom-submenu-page';
+		$this->page_slug = 'cf7isi-options';
 		add_submenu_page( 'wpcf7', 
 						 __('International Sms Integration', CF7SI_TXT), 
 						 __('International Sms Integration', CF7SI_TXT), 'manage_options',
@@ -114,9 +104,9 @@ class Contact_Form_7_International_Sms_Integration_Admin extends Contact_Form_7_
 	public function plugin_row_links( $plugin_meta, $plugin_file ) {
 		if ( CF7SI()->get_vars('FILE') == $plugin_file ) {
             $plugin_meta[] = sprintf('<a href="%s">%s</a>', '#', __('Settings', CF7SI_TXT) );
-            $plugin_meta[] = sprintf('<a href="%s">%s</a>', '#', __('F.A.Q', CF7SI_TXT) );
-            $plugin_meta[] = sprintf('<a href="%s">%s</a>', '#', __('View On Github', CF7SI_TXT) );
-            $plugin_meta[] = sprintf('<a href="%s">%s</a>', '#', __('Report Issue', CF7SI_TXT) );
+            $plugin_meta[] = sprintf('<a href="%s">%s</a>', 'https://wordpress.org/plugins/cf7-international-sms-integration/faq', __('F.A.Q', CF7SI_TXT) );
+            $plugin_meta[] = sprintf('<a href="%s">%s</a>', 'https://github.com/technofreaky/cf7-international-sms-intergation', __('View On Github', CF7SI_TXT) );
+            $plugin_meta[] = sprintf('<a href="%s">%s</a>', 'https://github.com/technofreaky/cf7-international-sms-intergation/issues', __('Report Issue', CF7SI_TXT) );
             $plugin_meta[] = sprintf('&hearts; <a href="%s">%s</a>', 'https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=KX225JU6JH8E2', __('Donate', CF7SI_TXT) );
             $plugin_meta[] = sprintf('<a href="%s">%s</a>', 'http://varunsridharan.in/plugin-support/', __('Contact Author', CF7SI_TXT) );
 		}

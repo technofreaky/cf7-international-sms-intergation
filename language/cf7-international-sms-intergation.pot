@@ -1,0 +1,124 @@
+# Copyright (C) 2015 Contact Form 7 International  SMS integration
+# This file is distributed under the same license as the Contact Form 7 International  SMS integration package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Contact Form 7 International  SMS integration 0.1\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/cf7-international-sms-intergation\n"
+"POT-Creation-Date: 2015-11-27 05:21:42+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2015-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+
+#: admin/class-admin-init.php:26 admin/class-admin-init.php:27
+msgid "International Sms Integration"
+msgstr ""
+
+#: admin/class-admin-init.php:106 template/cf7-settings.php:2
+msgid "Settings"
+msgstr ""
+
+#: admin/class-admin-init.php:107
+msgid "F.A.Q"
+msgstr ""
+
+#: admin/class-admin-init.php:108
+msgid "View On Github"
+msgstr ""
+
+#: admin/class-admin-init.php:109
+msgid "Report Issue"
+msgstr ""
+
+#: admin/class-admin-init.php:110
+msgid "Donate"
+msgstr ""
+
+#: admin/class-admin-init.php:111
+msgid "Contact Author"
+msgstr ""
+
+#: admin/class-contact-form-integration.php:21
+msgid "Interntional SMS"
+msgstr ""
+
+#: admin/class-table-listing.php:25
+msgid "By Form"
+msgstr ""
+
+#: admin/class-table-listing.php:26
+msgid "To Mobile"
+msgstr ""
+
+#: admin/class-table-listing.php:27
+msgid "Message"
+msgstr ""
+
+#: admin/class-table-listing.php:28
+msgid "Response"
+msgstr ""
+
+#: admin/class-table-listing.php:29
+msgid "Sent Date"
+msgstr ""
+
+#: includes/class-activation.php:118
+msgid "Change Log"
+msgstr ""
+
+#: includes/class-activation.php:129
+msgid " Download's so far. help use reach more audience by sharing"
+msgstr ""
+
+#: template/cf7-settings.php:7
+msgid "SMS Service API"
+msgstr ""
+
+#: template/cf7-settings.php:8
+msgid "Usable Codes : "
+msgstr ""
+
+#: template/welcome-page.php:73
+msgid "Subscribe to our mailing list"
+msgstr ""
+
+#: template/welcome-page.php:86
+msgid "Email Address"
+msgstr ""
+
+#: template/welcome-page.php:94
+msgid "First Name"
+msgstr ""
+
+#: template/welcome-page.php:100
+msgid "Last Name"
+msgstr ""
+
+#: template/welcome-page.php:106
+msgid "Website"
+msgstr ""
+
+#: template/welcome-page.php:115
+msgid "Country"
+msgstr ""
+#. Plugin Name of the plugin/theme
+msgid "Contact Form 7 International  SMS integration"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "https://wordpress.org/plugins/contact-form-7-sms-integration"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Contact Form 7 International  SMS integration"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Varun Sridharan"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://varunsridharan.in"
+msgstr ""
