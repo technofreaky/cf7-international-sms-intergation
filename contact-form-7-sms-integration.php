@@ -58,7 +58,7 @@ $default_args = array(
 'welcome_slug' => CF7SI_SLUG.'-welcome-page',
 'wp_plugin_slug' => CF7SI_SLUG,
 'wp_plugin_url' => 'https://wordpress.org/plugins/cf7-international-sms-integration/',
-'tweet_text' => 'Adds an SMS box to your Contact Form 7 options pages, fill this in and you\'ll get a text message each time somebody fills out one of your forms',
+'tweet_text' => __('Adds an SMS box to your Contact Form 7 options pages, fill this in and you\'ll get a text message each time somebody fills out one of your forms',CF7SI_TXT),
 'twitter_user' => 'varunsridharan2',
 'twitter_hash' => 'CF7InternationSMSintegration',
 'gitub_user' => 'technofreaky',
@@ -145,7 +145,7 @@ new cf7isi_activation_welcome_page($default_args);
      * Define Required Constant
      */
     private function define_constant(){
-        $this->define('CF7SI_NAME','Contact Form 7 SMS Integration'); # Plugin Name
+        $this->define('CF7SI_NAME',__('Contact Form 7 SMS Integration','cf7-International-sms-integration')); # Plugin Name
         $this->define('CF7SI_SLUG','cf7-International-sms-integration'); # Plugin Slug
 		$this->define('CF7SI_DB_SLUG','cf7si'); # Plugin DB Slug
         $this->define('CF7SI_TXT','cf7-International-sms-integration'); #plugin lang Domain
@@ -210,9 +210,6 @@ if(!function_exists('CF7SI')){
 	function CF7SI(){
 		return Contact_Form_7_International_Sms_Integration::get_instance();
 	}
-	
-	
 	CF7SI();
 }
-
 ?>

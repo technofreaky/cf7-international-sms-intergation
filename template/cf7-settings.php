@@ -1,5 +1,3 @@
-<br/><hr/><br/>
-<h1><?php _e('Settings', CF7SI_TXT);?></h1> 
 <form method="post">
 	<table class="form-table">
 		<tr>

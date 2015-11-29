@@ -12,8 +12,28 @@ class Contact_Form_7_International_Sms_Integration_Plugin_Integration extends Co
 	 * @since      0.1
 	 */
 	public function __construct() {
+		add_action( 'wp_ajax_CF7ISISMSHISTORYDELETE', array($this,'delete_cf7sms_history') );
+		add_action( 'wp_ajax_CF7ISISMSHISTORYEMPTY', array($this,'empty_cf7sms_history') );
+		
 		add_filter( 'wpcf7_editor_panels' , array($this, 'new_menu'),99);
 		add_action( 'wpcf7_after_save', array( &$this, 'save_form' ) );
+	}
+	
+	public function empty_cf7sms_history(){
+		update_option('wpcf7is_history',array());
+		exit;
+	}
+	
+	public function delete_cf7sms_history(){
+		$array = get_option( 'wpcf7is_history');
+		if(empty($array)){echo '1'; exit;}
+		$deleteID = $_REQUEST['deleteID'];
+		if(isset($array[$deleteID])){
+			unset($array[$deleteID]); 
+			update_option('wpcf7is_history',$array);
+			echo '1'; exit;
+		}
+		
 	}
 
 	public function new_menu ($panels) {
@@ -28,7 +48,7 @@ class Contact_Form_7_International_Sms_Integration_Plugin_Integration extends Co
 		if ( wpcf7_admin_has_edit_cap() ) {
 		  $options = get_option( 'wpcf7_international_sms_' . (method_exists($form, 'id') ? $form->id() : $form->id) );
 		  if( empty( $options ) || !is_array( $options ) ) {
-			$options = array( 'phone' => '', 'message' => '' );
+			$options = array( 'phone' => '', 'message' => '', 'visitorNumber' => '','visitorMessage' => '');
 		  }
 		  $options['form'] = $form;
           $data =  $options; 

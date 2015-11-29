@@ -7,18 +7,31 @@ class cf7si_history_listing_table extends WP_List_Table {
     function __construct(){
         global $status, $page;
         parent::__construct( array(
-            'singular'  => 'movie',
-            'plural'    => 'movies',
+            'singular'  => '',
+            'plural'    => '',
             'ajax'      => false
         ) );
     }
 
     function column_default($item, $column_name){ return print_r($item,true); }
-    function column_formNAME($item){ return $item['formNAME'].'<br/> <span style="font-weight: bold; color: rgb(113, 113, 113);">(id:'.$item['formID'].')</span>'; }
+	
+    function column_formNAME($item){ 
+ 
+		$actions = array(
+            'delete'    => sprintf('<a class="deleteRecord" href="javascript:void(0);" data-id="%s">'.__('Delete',CF7SI_TXT).'</a>',$item['ID']),
+        );
+		
+		return sprintf('%1$s <br/> <span style="font-weight: bold; color: rgb(113, 113, 113);">(id:%2$s)</span>%3$s',
+            /*$1%s*/ $item['formNAME'],
+            /*$2%s*/ $item['formID'],
+            /*$3%s*/ $this->row_actions($actions)
+        );
+	}
     function column_tomobile($item){ return $item['to']; }
     function column_response($item){ return $item['response']; }
 	function column_message($item){ return urldecode($item['message']); }
 	function column_sentdatetime($item){ return $item['datetime'];}
+	function column_smsTo($item){ return isset($item['type']) ? $item['type'] : '' ;}
 	
     function get_columns(){
         $columns = array( 
@@ -27,6 +40,7 @@ class cf7si_history_listing_table extends WP_List_Table {
 			'message' => __('Message',CF7SI_TXT),
 			'response'    => __('Response',CF7SI_TXT),
             'sentdatetime'  => __('Sent Date',CF7SI_TXT),
+			'smsTo' => __('SMS To',CF7SI_TXT),
         );
         return $columns;
     }
@@ -53,13 +67,18 @@ class cf7si_history_listing_table extends WP_List_Table {
 
     function prepare_items() {
         global $wpdb; //This is used only if making any database queries
-        $per_page = 5;
+        $per_page = 20;
         $columns = $this->get_columns();
         $hidden = array();
         $sortable = $this->get_sortable_columns();
         $this->_column_headers = array($columns, $hidden, $sortable);
         $this->process_bulk_action();
         $data = get_option('wpcf7is_history',array());
+		function date_compare($a, $b) { 
+			$t1 = strtotime($a['datetime']); $t2 = strtotime($b['datetime']);
+			return $t2 - $t1;
+		}    
+		usort($data, 'date_compare');
         $current_page = $this->get_pagenum();
         $total_items = count($data);
 		$data = array_slice($data,(($current_page-1)*$per_page),$per_page);
@@ -71,17 +90,34 @@ class cf7si_history_listing_table extends WP_List_Table {
             'total_pages' => ceil($total_items/$per_page)   //WE have to calculate the total number of pages
         ) );
     }
+	
+
+	/**
+	 * Generates content for a single row of the table
+	 *
+	 * @since 3.1.0
+	 * @access public
+	 *
+	 * @param object $item The current item
+	 */
+	public function single_row( $item ) {
+		echo '<tr id="'.$item['ID'].'" >';
+		$this->single_row_columns( $item );
+		echo '</tr>';
+	}	
 }
 
 function cf7si_history_listing(){
     $testListTable = new cf7si_history_listing_table();
     $testListTable->prepare_items();
     ?>
-        <h2>SMS History</h2>
-        <p>SMS History will be auto cleared if it exceeds 100 records</p>
         <form id="movies-filter" method="get">
-            <input type="hidden" name="page" value="<?php echo $_REQUEST['page'] ?>" />
             <?php $testListTable->display() ?>
         </form>
+		<button type="button"  id="emptyHistory" class="button button-secondary"><?php _e('Empty History',CF7SI_TXT); ?></button>
+		
+<script>
+	var DELETEPOPTXT = '<?php _e('Are You Sure Want To Empty SMS History ?',CF7SI_TXT); ?>';
+</script>
     <?php
 }

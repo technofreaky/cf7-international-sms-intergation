@@ -32,10 +32,8 @@ class Contact_Form_7_International_Sms_Integration_Admin extends Contact_Form_7_
 	public function admin_page(){
 		global $Custom_pagetitle,$slugs;
 		$this->save_settings();
-		$slugs = $this->page_slug;
-		$Custom_pagetitle = 'Settings';
+		$slugs = $this->page_slug; 
 		CF7SI()->load_files(CF7SI()->get_vars('PATH').'template/cf7-conf-header.php'); 
-		CF7SI()->load_files(CF7SI()->get_vars('PATH').'template/cf7-settings.php'); 
 		CF7SI()->load_files(CF7SI()->get_vars('PATH').'template/cf7-conf-footer.php');
 	}
 	
@@ -58,7 +56,7 @@ class Contact_Form_7_International_Sms_Integration_Admin extends Contact_Form_7_
 	 */
 	public function enqueue_styles() { 
         if(in_array($this->current_screen() , $this->get_screen_ids())) {
-            wp_enqueue_style(PLUGIN_SLUG.'_core_style',plugins_url('css/style.css',__FILE__) , array(), $this->version, 'all' );  
+            wp_enqueue_style(CF7SI_SLUG.'_core_style',plugins_url('css/style.css',__FILE__) , array(), $this->version, 'all' );  
         }
 	}
 	
@@ -68,7 +66,7 @@ class Contact_Form_7_International_Sms_Integration_Admin extends Contact_Form_7_
 	 */
 	public function enqueue_scripts() {
         if(in_array($this->current_screen() , $this->get_screen_ids())) {
-            wp_enqueue_script(PLUGIN_SLUG.'_core_script', plugins_url('js/script.js',__FILE__), array('jquery'), $this->version, false ); 
+            wp_enqueue_script(CF7SI_SLUG.'_core_script', plugins_url('js/script.js',__FILE__), array('jquery'), $this->version, false ); 
         }
  
 	}
@@ -88,8 +86,7 @@ class Contact_Form_7_International_Sms_Integration_Admin extends Contact_Form_7_
      */
     public function get_screen_ids(){
         $screen_ids = array();
-        $screen_ids[] = 'edit-product';
-        $screen_ids[] = 'product';
+        $screen_ids[] = 'contact_page_cf7isi-options'; 
         return $screen_ids;
     }
     
