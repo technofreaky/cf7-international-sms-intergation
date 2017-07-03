@@ -6,7 +6,7 @@ Tags: contact form 7, free, sms, contact, contact form
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=KX225JU6JH8E2
 Requires at least: 3.0
 Tested up to: 4.4 
-Stable tag: 0.1
+Stable tag: 1.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html 
 
@@ -18,6 +18,8 @@ Works with the Contact Form 7 plugin to send SMS notifications when somebody sub
 Adds an SMS box to your Contact Form 7 options pages, fill this in and you'll get a text message each time somebody fills out one of your forms.
 
 = Features =
+<h2>Pro Version @ https://codecanyon.net/item/contact-form-7-international-sms/19912360 </h2>
+
 1. SMS To Site Admin / Admin Configured Number
 2. SMS To Site Visitor (Number Via CF7 Form TAG)
 3. SMS History (With Response From SMS Gateway).
@@ -26,6 +28,7 @@ Adds an SMS box to your Contact Form 7 options pages, fill this in and you'll ge
 > We Do Provide Installation and configuration at just 2$ per request :). contact us @ varunsridharan23@gmail.com / http://varunsridharan.in/plugin-support/
 
 = Banner & ICON By <a href="http://arkblueprint.com" > ARK BLUEPRINT</a> =
+
 
 
 == Screenshots ==
@@ -64,5 +67,13 @@ The manual installation method involves downloading our plugin and uploading it 
  
 
 == Changelog == 
+= 1.2 =
+* Settings Page Issue Fixed. :(
+
+= 1.1 =
+* Settings Page Issue Fixed. :(
+
+= 1.0 -
+* Total Plugin Redeveloped With Major Changes and some new extra feature.
 = 0.1 =
 * Base Version

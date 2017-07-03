@@ -1,0 +1,463 @@
+# Copyright (C) 2017 Contact Form 7 International SMS
+# This file is distributed under the same license as the Contact Form 7 International SMS package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Contact Form 7 International SMS 1.1\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/cf7-international-sms-integration\n"
+"POT-Creation-Date: 2017-06-09 05:25:25+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2017-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+
+#: bootstrap.php:51
+msgid "Cloning instances of the class is forbidden."
+msgstr ""
+
+#: bootstrap.php:63
+msgid "Unserializing instances of the class is forbidden."
+msgstr ""
+
+#: includes/admin/class-admin-init.php:104
+msgid "Settings"
+msgstr ""
+
+#: includes/admin/class-admin-init.php:105
+msgid "Contact Author"
+msgstr ""
+
+#: includes/admin/class-admin-init.php:119
+msgid "Report Issue"
+msgstr ""
+
+#: includes/admin/class-admin-init.php:120
+msgid "View on CodeCanyon"
+msgstr ""
+
+#: includes/admin/class-ajax-handler.php:34
+msgid "SMS Sent Successfully"
+msgstr ""
+
+#: includes/admin/class-ajax-handler.php:36
+#: includes/admin/class-ajax-handler.php:39
+msgid "Invalid Order Status SMS Selected"
+msgstr ""
+
+#: includes/admin/class-ajax-handler.php:42
+msgid "Invalid Order ID"
+msgstr ""
+
+#: includes/admin/class-ajax-handler.php:58
+msgid "Requested Data Not Avaiable"
+msgstr ""
+
+#: includes/admin/class-ajax-handler.php:61
+msgid "Invalid SMS ID"
+msgstr ""
+
+#: includes/admin/class-ajax-handler.php:72
+msgid "Log Deleted (%s)"
+msgstr ""
+
+#: includes/admin/class-ajax-handler.php:76
+msgid "Log Already Deleted (%s)"
+msgstr ""
+
+#: includes/admin/class-ajax-handler.php:81
+msgid "SMS ID Dose Not Exists"
+msgstr ""
+
+#: includes/admin/class-cf7-handler.php:31
+msgid "CF7 Interntional SMS"
+msgstr ""
+
+#: includes/admin/class-cf7-handler.php:44
+msgid "General SMS Notification Settings"
+msgstr ""
+
+#: includes/admin/class-cf7-handler.php:51
+msgid "Send SMS Notification ?"
+msgstr ""
+
+#: includes/admin/class-cf7-handler.php:60
+msgid "If Default Selected Then Global Sender ID Will Be Used"
+msgstr ""
+
+#: includes/admin/class-cf7-handler.php:62
+msgid "Sender ID :"
+msgstr ""
+
+#: includes/admin/class-cf7-handler.php:71
+msgid "Visitor SMS Notifications"
+msgstr ""
+
+#: includes/admin/class-cf7-handler.php:72
+#: includes/admin/class-cf7-handler.php:108
+msgid "In the following fields, you can use these tags:"
+msgstr ""
+
+#: includes/admin/class-cf7-handler.php:77
+#: includes/admin/class-cf7-handler.php:113
+msgid "To:"
+msgstr ""
+
+#: includes/admin/class-cf7-handler.php:78
+msgid "<small>Use <b>CF7 Tags</b> To Get Visitor Mobile Number | Enter Numbers By <code>,</code> for multiple</small>"
+msgstr ""
+
+#: includes/admin/class-cf7-handler.php:93
+#: includes/admin/class-cf7-handler.php:128
+msgid "Message body:"
+msgstr ""
+
+#: includes/admin/class-cf7-handler.php:107
+msgid "Admin SMS Notifications"
+msgstr ""
+
+#: includes/admin/class-cf7-handler.php:114
+msgid "<small>Enter Numbers By <code>,</code> for multiple</small>"
+msgstr ""
+
+#: includes/admin/class-sms-log-display.php:81
+msgid "Form No  "
+msgstr ""
+
+#: includes/admin/class-sms-log-display.php:105
+msgid "%s * (%s) Errors Occured %s"
+msgstr ""
+
+#: includes/admin/class-sms-log-display.php:150
+msgid "LOG ID"
+msgstr ""
+
+#: includes/admin/class-sms-log-display.php:151
+msgid "Time"
+msgstr ""
+
+#: includes/admin/class-sms-log-display.php:152
+msgid "CF Form "
+msgstr ""
+
+#: includes/admin/class-sms-log-display.php:153
+#: includes/admin/views/ajax-full-log-view.php:38
+msgid "Sent By"
+msgstr ""
+
+#: includes/admin/class-sms-log-display.php:154
+#: includes/admin/views/ajax-full-log-view.php:89
+msgid "SMS To"
+msgstr ""
+
+#: includes/admin/class-sms-log-display.php:155
+msgid "Response"
+msgstr ""
+
+#: includes/admin/class-sms-log-display.php:213
+msgid "Following SMS Logs Deleted Successfully : %s "
+msgstr ""
+
+#: includes/admin/class-sms-log-display.php:220
+msgid "Unable to delete the following sms logs  : %s  <br/> it may be already deleted."
+msgstr ""
+
+#: includes/admin/settings_framework/class-wp-plugin-options.php:19
+#: includes/admin/settings_framework/class-wp-plugin-options.php:30
+#: includes/functions.php:214
+msgid "General"
+msgstr ""
+
+#: includes/admin/settings_framework/class-wp-plugin-options.php:20
+msgid "SMS Gateway"
+msgstr ""
+
+#: includes/admin/settings_framework/class-wp-plugin-options.php:22
+msgid "SMS Logs"
+msgstr ""
+
+#: includes/admin/settings_framework/class-wp-settings-framework.php:36
+msgid "International SMS"
+msgstr ""
+
+#: includes/admin/settings_framework/fields.php:7
+msgid "Enable Customer SMS Notifications"
+msgstr ""
+
+#: includes/admin/settings_framework/fields.php:8
+msgid "If checked then sms notifications will be sent"
+msgstr ""
+
+#: includes/admin/settings_framework/fields.php:16
+msgid "Enable Admin SMS Notifications"
+msgstr ""
+
+#: includes/admin/settings_framework/fields.php:17
+msgid "If checked then Admin sms notifications will be sent"
+msgstr ""
+
+#: includes/admin/settings_framework/fields.php:24
+msgid "Admin Mobile Numbers"
+msgstr ""
+
+#: includes/admin/settings_framework/fields.php:25
+msgid "Enter Multiple Numbers By <code>,</code>"
+msgstr ""
+
+#: includes/admin/settings_framework/fields.php:27
+msgid "Eg : +9100000000,+660000000"
+msgstr ""
+
+#: includes/admin/settings_framework/fields.php:39
+msgid "SMS Gateway URL"
+msgstr ""
+
+#: includes/admin/settings_framework/fields.php:40
+msgid "Just Enter Only The Gateway URL"
+msgstr ""
+
+#: includes/admin/settings_framework/fields.php:53
+msgid "API Processing Method"
+msgstr ""
+
+#: includes/admin/settings_framework/fields.php:57
+msgid "POST"
+msgstr ""
+
+#: includes/admin/settings_framework/fields.php:58
+msgid "GET"
+msgstr ""
+
+#: includes/admin/settings_framework/fields.php:66
+msgid "SMS Gateway Attributes"
+msgstr ""
+
+#: includes/admin/settings_framework/fields.php:67
+msgid ""
+"Just Enter Only The Gateway URL Attributes by <code>,</code> and values by <code>=</code> \n"
+"        \n"
+"        <h3 style=\"margin:10px 0;\">Available Tags : </h3>\n"
+"        <ul style=\"margin:0;\">\n"
+"            <li><strong> Message Content : </strong> <code> %message%</code></li>\n"
+"            <li><strong> To Number : </strong>  <code>%tonumber%</code></li>\n"
+"            <li><strong> Sender ID :  </strong> <code>%senderid%</code></li>\n"
+"        </ul>\n"
+"        \n"
+"    "
+msgstr ""
+
+#: includes/admin/settings_framework/fields.php:87
+msgid "Encode URL Attributes"
+msgstr ""
+
+#: includes/admin/settings_framework/fields.php:88
+msgid "Depending on your SMS Gateway , you may or may not need to encode the url attributes. if you encounter sending errors please try with and or without encoding "
+msgstr ""
+
+#: includes/admin/settings_framework/fields.php:96
+msgid "Available Sender ID's"
+msgstr ""
+
+#: includes/admin/settings_framework/fields.php:97
+msgid "You Can enter multiple sender ids and will allow you to set sender for each and every order message. enter multiple sender ids by <code>,</code>"
+msgstr ""
+
+#: includes/admin/settings_framework/fields.php:109
+msgid "Default Sender ID"
+msgstr ""
+
+#: includes/admin/settings_framework/fields.php:110
+msgid "Choose any 1 sender id as default. it will be used when there is no override done for the message. please fill the above sender ids box to get the list"
+msgstr ""
+
+#: includes/admin/views/addons-single.php:17
+msgid "V"
+msgstr ""
+
+#: includes/admin/views/addons-single.php:26
+msgid "By"
+msgstr ""
+
+#: includes/admin/views/addons-single.php:35
+msgid "Required Plugins :"
+msgstr ""
+
+#: includes/admin/views/addons-single.php:41 includes/class-extensions.php:114
+msgid "InActive"
+msgstr ""
+
+#: includes/admin/views/addons-single.php:43
+msgid "Plugin Dose Not Exist"
+msgstr ""
+
+#: includes/admin/views/addons-single.php:44 includes/class-extensions.php:113
+msgid "Active"
+msgstr ""
+
+#: includes/admin/views/addons-single.php:56
+msgid "Above Mentioned Plugin name with version are Tested Upto"
+msgstr ""
+
+#: includes/admin/views/addons-single.php:57
+msgid "Addon Slug : "
+msgstr ""
+
+#: includes/admin/views/addons-single.php:65
+msgid "Last Updated:"
+msgstr ""
+
+#: includes/admin/views/ajax-full-log-view.php:5
+msgid "General Information"
+msgstr ""
+
+#: includes/admin/views/ajax-full-log-view.php:10
+msgid "SMS ID"
+msgstr ""
+
+#: includes/admin/views/ajax-full-log-view.php:15
+msgid "Sent Date"
+msgstr ""
+
+#: includes/admin/views/ajax-full-log-view.php:20
+msgid "Related CF7 Form"
+msgstr ""
+
+#: includes/admin/views/ajax-full-log-view.php:25
+msgid "SMS For"
+msgstr ""
+
+#: includes/admin/views/ajax-full-log-view.php:56
+msgid "SMS Trigger Reason"
+msgstr ""
+
+#: includes/admin/views/ajax-full-log-view.php:59
+msgid "Sent By System"
+msgstr ""
+
+#: includes/admin/views/ajax-full-log-view.php:61
+msgid "Form Submitted"
+msgstr ""
+
+#: includes/admin/views/ajax-full-log-view.php:63
+msgid "Order Status Changed."
+msgstr ""
+
+#: includes/admin/views/ajax-full-log-view.php:65
+msgid "Unknown"
+msgstr ""
+
+#: includes/admin/views/ajax-full-log-view.php:84
+msgid "SMS Information"
+msgstr ""
+
+#: includes/admin/views/ajax-full-log-view.php:94
+msgid "Sender ID"
+msgstr ""
+
+#: includes/admin/views/ajax-full-log-view.php:99
+msgid "message"
+msgstr ""
+
+#: includes/admin/views/ajax-full-log-view.php:121
+#: includes/admin/views/ajax-full-log-view.php:126
+msgid "API Response"
+msgstr ""
+
+#: includes/class-extensions.php:23 includes/class-extensions.php:39
+msgid "Unable to process you request. please try again later"
+msgstr ""
+
+#: includes/class-extensions.php:25 includes/class-extensions.php:31
+msgid "Unable To De-Activate Addon. Please Try Again Later"
+msgstr ""
+
+#: includes/class-extensions.php:27
+msgid "Addon De-Activated"
+msgstr ""
+
+#: includes/class-extensions.php:29
+msgid "Addon Already De-Activated"
+msgstr ""
+
+#: includes/class-extensions.php:41 includes/class-extensions.php:47
+msgid "Unable To Activate Addon. Please Try Again Later"
+msgstr ""
+
+#: includes/class-extensions.php:43
+msgid "Addon Activated"
+msgstr ""
+
+#: includes/class-extensions.php:45
+msgid "Addon Already Activated"
+msgstr ""
+
+#: includes/class-extensions.php:112
+msgid "All"
+msgstr ""
+
+#: includes/class-extensions.php:206
+msgid "Activate"
+msgstr ""
+
+#: includes/class-extensions.php:207
+msgid "Deactivate"
+msgstr ""
+
+#: includes/class-sms-handler.php:45
+msgid "No Sender ID Defined."
+msgstr ""
+
+#: includes/class-sms-handler.php:47
+msgid "Invalid Sender Number (%s)"
+msgstr ""
+
+#: includes/class-sms-handler.php:48
+msgid "Invalid / Empty SMS Message"
+msgstr ""
+
+#: includes/class-sms-handler.php:49
+msgid "Invalid / Empty SMS Gateway URL (%s)"
+msgstr ""
+
+#: includes/class-sms-handler.php:50
+msgid "Invalid Processing Method Selected"
+msgstr ""
+
+#: includes/class-sms-handler.php:51
+msgid "No URL Attributes Entered"
+msgstr ""
+
+#: includes/functions.php:217 includes/functions.php:229
+msgid "Save Changes"
+msgstr ""
+
+#: includes/functions.php:414
+msgid "Default"
+msgstr ""
+
+#: includes/functions.php:515
+msgid "required"
+msgstr ""
+
+#: includes/functions.php:573 includes/functions.php:584
+msgid "Choose an option"
+msgstr ""
+#. Plugin Name of the plugin/theme
+msgid "Contact Form 7 International SMS"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "http://wordpress.org/plugins/cf7-international-sms-integration"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Send SMS Notification to customer and also Supports Worlds 99% of SMS Gateway"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Varun Sridharan"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://varunsridharan.in"
+msgstr ""
